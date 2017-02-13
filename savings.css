@@ -1,0 +1,272 @@
+:root {
+  font-size: 15px;
+}
+
+body {
+  font-family: helvetica;
+   background-image: url("https://dl.dropboxusercontent.com/s/do8bwpxzkqpbmvk/White%20Background%20with%20Angled%20Gray%20Bars.png?dl=0");
+  background-attachment:fixed;
+}
+
+#navigation {
+  height: 5.0rem;
+  background: #3673A3;
+}
+
+#logo {
+  float: left;
+  display: block;
+  background-position: center;
+}
+
+#logo img {
+  height: 5.0rem;
+}
+
+#nav_bar {
+  display: block;
+  margin-left: 30.0rem;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 1.2rem;
+  padding-top: 0.7rem;
+}
+
+nav ul li a {
+  float: left;
+  padding: 1.0rem 1.0rem;
+  text-align:center;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+#savings{
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.table_entry{
+  text-align: center;
+  border-style: solid;
+  width: 15.2rem;
+  height: 3rem;
+}
+.table_header{
+  text-align: center;
+}
+.cancel_button{
+  background:  none;
+  color: #3e627f;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  width: 6rem;
+  padding-left: 0.7rem;
+}
+.cancel_button:hover{
+  color: red;
+}
+.cancel_button:active{
+  border:none;
+  background: #eee;
+  color: red;
+}
+#table{
+  margin-left: 1.5rem;
+  margin-top: 2rem;
+}
+.deposit_button{
+  background-color: #3ba7ff;
+  color: white;
+    width: 7rem;
+  height: 3.2rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.deposit_button:hover{
+  text-decoration: underline;
+}
+#current_goals{
+  text-align: center;
+  height: 7rem;
+  font-size: 1.3rem;
+}
+#Add_more_button{
+  width: 15.2rem;
+  margin-top: 2rem;
+  margin-left: 0rem;
+  height: 3rem;
+  background-color: #72b4e9;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+#Add_more_button:hover{
+  text-decoration: underline;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  font-family: Helvetica;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+.container {
+  padding: 16px;}
+
+  .finish_button {
+    background-color: #7DC5FF;
+    color: white;
+    padding: 0.5rem 0.1rem;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    float: right;
+}
+.input {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  text-align: left;
+}
+form {
+    border: 3px solid #f1f1f1;
+}
+/* The Close Button */
+.AM_close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.subtitle{
+  text-align: left;
+}
+
+.AM_close:hover,
+.AM_close:focus {
+    color: black;
+    text-decoration: none;
+  cursor: pointer;} 
+.no_thanks_button{
+   background-color: #3ba7ff;
+    color: white;
+    padding: 0.5rem 0.1rem;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+}
+.yes_button{
+    background-color: lightgrey;
+    padding: 0.5rem 0.1rem;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+}
+#USD{
+  float:left;
+  margin-top: 1.3rem;
+}
+#title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.D_close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.D_close:hover,
+.D_close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#D1_target, #D1_name{
+  font-family: Helvetica;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+#percent_bar {
+  display: inline-block;
+  width: 20.0rem;
+  height: 3.0rem;
+  border: 0.13rem solid black;
+  background: white;
+  float: right;
+}
+#percent_bar p {
+  float: right;
+  margin-right: 0.2rem;
+  margin-top: 0.75rem
+}
+#percent_filled {
+  display: inline-block;
+  width: 5.0rem;
+  height: 3.0rem;
+  background: green;
+  float: right;
+}
+
+#goal_name {
+ margin-left: 2rem;
+}
+
+#D_goal {
+  height: 3.0rem;
+  margin-top: 2.0rem}
+#collected{
+  margin-top: 0.75rem;
+  margin-left: 0.5rem;
+  float: left;
+}
+#D_amount{
+  font-weight: normal;
+  margin-left: 1rem;
+  display: inline;
+}
+/*Empty full messages*/
+
+#no_goals{
+  display: none;
+   color: #3673A3;
+  font-weight: bold;
+}
+#goal_limit{
+  display: none;
+  color: #3673A3;
+  font-weight: bold;
+}
+
