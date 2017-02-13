@@ -193,14 +193,20 @@ form {
     border: none;
     cursor: pointer;
     width: 10%;
+    margin-right: 35rem;
 }
 
 .yes_button:hover{
   text-decoration:underline;
 }
 #USD{
+  margin-right: -2rem;
+  margin-left: 2rem;
   float:left;
   margin-top: 1.3rem;
+}
+#AM_goal_name{
+  margin-left:2rem;
 }
 #title{
   text-align: center;
