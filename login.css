@@ -39,8 +39,9 @@ button:hover {
   text-decoration: underline;
 }
 
-button:visited {
+a {
   color: #0C2440;
+  text-decoration: none;
 }
 
 #loginButton {
