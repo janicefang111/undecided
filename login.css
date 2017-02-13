@@ -39,6 +39,10 @@ button:hover {
   text-decoration: underline;
 }
 
+button:visited {
+  color: #0C2440;
+}
+
 #loginButton {
   position: relative;
   right: -350px;
@@ -48,3 +52,5 @@ button:hover {
   position: relative;
   right: -300px;
 }
+
+
