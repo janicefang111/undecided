@@ -161,8 +161,8 @@ var goal_limit = document.getElementById("goal_limit");
 //Indicators
 //Empty vs full rows
 var l1 = 1;
-var l2 = 1;
-var l3 = 1;
+var l2 = 0;
+var l3 = 0;
 //Which row is being added (value 1,2 or 3)
 var Added_Row = 0;
 //Which Deposit modal is active (value 1,2 or 3)
