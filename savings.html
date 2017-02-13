@@ -1,0 +1,139 @@
+<html>
+  <head>
+   <link rel="stylesheet" type="text/css" href="savings.css">
+   <link rel="stylesheet" type="text/css" href="theme.css">
+  </head>
+  <body>
+  <script src="savings.js"></script>
+    <div id="navigation">
+      <div id="logo">
+      <img src="https://dl.dropboxusercontent.com/s/jh5jvbzd1svj0g4/piggyBank.png?dl=0">
+      </div>
+      <div id="nav_bar">
+        <nav>
+          <ul>
+            <li id="home"><a href="#">Home</a></li>
+            <li id="savings"><a href="#">Savings</a></li>
+            <li id="budget"><a href="#">Budget</a></li>
+            <li><a href="#">Transactions</a></li>
+            <li><a href="#">Account</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+   <br>
+    <div id = "current_goals"><h1 id = "page_title">Current Goals</h1><div>
+
+    <div id = "no_goals"> You have no Goals yet!</div>
+  
+  <div id = "goal_limit">Goal Limit Reached!</div>
+  <table id = "table">
+  <tr id = "headers">
+    <th id = "cancel"></th>
+    <th>Name</th>
+    <th>Target Amount</th>
+    <th>Collected</th>
+    <th>Monthly Deposit</th>
+    <th></th>
+    <th id = "deposit"></th>
+  </tr>
+  <tr id = "row1">
+    <td>
+      <button id = "del_1" class = "cancel_button">Delete</button>
+    </td>
+    <td id= "name_1" class = "table_entry">Goal 1</td>
+    <td  class = "table_entry" id= "target_1">$100</div>
+      </td>
+    <td id= "collected_1"class = "table_entry">$10</td>
+    <td id= "rec_1"class = "table_entry">$1</td>
+    <td>
+      <button class = "deposit_button" id = "D1_button">Deposit</button>
+    </td>
+  </tr>
+    <tr id = "row2">
+    <td>
+      <button id = "del_2" class = "cancel_button">Delete</button>
+    </td>
+    <td id= "name_2" class = "table_entry">Goal 2</td>
+    <td id= "target_2" class = "table_entry">$200</td>
+    <td id= "collected_2"class = "table_entry">$42</td>
+    <td id= "rec_2"class = "table_entry">$21</td>
+    <td>
+      <button class = "deposit_button" id = "D2_button">Deposit</button>
+    </td>
+  </tr>
+    <tr id = "row3">
+    <td>
+      <button id = "del_3" class = "cancel_button">Delete</button>
+    </td>
+    <td id= "name_3" class = "table_entry">Goal 3</td>
+    <td id= "target_3" class = "table_entry">$433</td>
+    <td id= "collected_3"class = "table_entry">$300</td>
+    <td id= "rec_3"class = "table_entry">$30</td>
+    <td>
+      <button class = "deposit_button" id = "D3_button">Deposit</button>
+    </td>
+  </tr>
+</table>
+      <!-- Trigger/Open The Modal -->
+<button id="Add_more_button">Add Goal</button>
+
+<!-- The Modal -->
+<div id="Add_more_modal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="AM_close">&times;</span>
+  <div id = "AM_title"> New Goal</div>
+
+  <div class="container">
+    <div class =  "subtitle">Goal name</div>
+    <div id = "AM_goal_name" class = "input" contenteditable="true" ></div>
+    <br><br>
+     <div class =  "subtitle">TargetAmount</div>
+    <div class ="input" id = "AM_target_amount" contenteditable="true" ></div><div id = "USD">$</div>
+    <br><br>
+       <div class =  "subtitle">Deposit</div>
+    <div class ="input" id ="AM_deposit_amount" contenteditable="true" ></div><div id = "USD">$</div>
+    <br<br>
+    <div class =  "subtitle">Make this a monthly deposit?</div>
+    <br>
+    <button id = "yes_button_AM" class = "yes_button">Yes</button>
+    <button id = "no_button_AM" class  = "no_thanks_button">No Thanks</buttom>
+    <button  id = "AM_save_goal" class = "finish_button">Save Goal</button>
+  </div>
+  </div>
+</div>
+</div>
+      
+      <div id="D_modal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="D_close">&times;</span>
+  <div id = "D_title" class = "title"> New Goal</div>
+
+  <div class="container">
+ <div id  = "D1_target"> <div id="goals">
+        <div id="D_goal">
+          <div id="percent_bar">
+            <div id="percent_filled"></div>
+            <p id = "progress">10%</p>
+          </div>
+          <div id="collected">Collected: <div id = "D_amount"></div> </div>
+        </div>
+      </div></div>
+       <div>Deposit</div>
+    <div class ="input" id ="D_deposit_amount" contenteditable="true" ></div><div id = "USD">$</div>
+    <br<br>
+    <div class = "subtitle">Make this a monthly deposit? </div>
+    <br>
+    <button id =  "yes_button_D" class = "yes_button">Yes</button>
+    <button id = "no_button_D" class  = "no_thanks_button">No Thanks</buttom>
+    <button id = "D_save_goal" class = "finish_button">Save Goal</button>
+  </div>
+  </div>
+</div>
+</div>
+  </body>
+</html>
