@@ -171,7 +171,7 @@ form {
 .AM_close:hover,
 .AM_close:focus {
     color: black;
-    text-decoration: none;
+    text-decoration: underline;
   cursor: pointer;} 
 .no_thanks_button{
    background-color: #3ba7ff;
@@ -182,6 +182,10 @@ form {
     cursor: pointer;
     width: 10%;
 }
+.no_thanks_button:hover {
+  text-decoration: underline;
+}
+
 .yes_button{
     background-color: lightgrey;
     padding: 0.5rem 0.1rem;
@@ -189,6 +193,10 @@ form {
     border: none;
     cursor: pointer;
     width: 10%;
+}
+
+.yes_button:hover{
+  text-decoration:underline;
 }
 #USD{
   float:left;
