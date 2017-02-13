@@ -95,7 +95,7 @@ D_save_goal.onclick = function(){
     }
   }
   D_modal.style.display = "none";
-  D_deposit_amount.innerHTML = "";
+  D_deposit_amount.innerHTML = "0";
   D_active = 0;
   rec_pay_D = 0;
 }
@@ -310,8 +310,8 @@ AM_save_goal.onclick = function(){
 }
   Added_Row = 0;
   rec_pay_AM = 0;
-  AM_target_amount.innerHTML = "";
-  AM_goal_name.innerHTML = "";
-  AM_deposit_amount.innerHTML = "";
+  AM_target_amount.innerHTML = "0";
+  AM_goal_name.innerHTML = "New Goal";
+  AM_deposit_amount.innerHTML = "0";
 }
 
