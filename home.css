@@ -56,6 +56,7 @@ nav ul li a:hover {
   width: 35.0rem;
   display: inline-block;
   float: left;
+  padding-top: 0.7rem;
   margin-left: 3.0rem;
 }
 
@@ -104,12 +105,10 @@ nav ul li a:hover {
   display: inline-block;
   height: 22.0rem;
   width: 27.0rem;
-  margin-right: 0rem;
 }
 
 #goals h2 {
-  text-align: right;
-  margin-right: 0.7rem;
+  text-align: center;
 }
 
 #percent_bar {
@@ -128,7 +127,7 @@ nav ul li a:hover {
   display: inline-block;
   width: 5.0rem;
   height: 3.0rem;
-  background: green;
+  background: #3BA7FF;
 }
 
 #goal_name {
@@ -143,20 +142,8 @@ nav ul li a:hover {
   margin-top: 2.0rem;
 }
 
-#see_more {
-  float: right;
-  margin-top: 3.0rem;
-  margin-right: 1.0rem;
-  padding: 1.0rem 2.0rem;
-  font-size: 1.0rem;
-  border: 0.1rem solid black;
-}
-#see_more:hover {
-  background: lightgrey;
-}
-
 #page_content {
-  width:65.0rem;
+  width:70.0rem;
   padding: 3.0rem 0;
 }
 
@@ -177,7 +164,10 @@ th, td {
   padding: 0.5rem 0.5rem;
 }
 
+
+
 /*
 #graph, #goals, #page_content {
   border: 5px solid black;
-}*/
+}
+*/
