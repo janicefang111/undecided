@@ -1,0 +1,23 @@
+.root {
+  font-size:15px;
+}
+body {
+  font-family: helvetica;
+  background-color: #0C2440;
+  background-image:url("https://dl.dropboxusercontent.com/s/kylmr2q0yvdrnns/Login%20Complete%20Background.png?dl=0");
+  background-repeat: no-repeat;
+}
+
+.userBox {
+  margin: auto;
+  width: 50%;
+  padding: .75rem;
+  color: white;
+  list-style-type:none;
+  background-color: rgba(46, 144, 255, 0.5);
+}
+
+.list {
+  list-style-type:none;
+}
+
