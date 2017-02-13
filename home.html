@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" href="home.css">
   </head>
   <body>
     <div id="navigation">
@@ -11,8 +11,8 @@
       <div id="nav_bar">
         <nav>
           <ul>
-            <li id="home"><a href="home.html">Home</a></li>
-            <li id="savings"><a href="savings.html">Savings</a></li>
+            <li id="home"><a href="#">Home</a></li>
+            <li id="savings"><a href="#">Savings</a></li>
             <li id="budget"><a href="#">Budget</a></li>
             <li><a href="#">Transactions</a></li>
             <li><a href="#">Account</a></li>
@@ -22,18 +22,7 @@
     </div>
     <div id="page_content">
       <div id="graph">
-        <h2>January Transactions</h2>
-        <img src="http://orm-chimera-prod.s3.amazonaws.com/1230000000345/images/idvw_1101.png">
-        <div id="legend">
-          <ul>
-            <li><div id="utilities"></div>Utilities</li>
-            <li><div id="food"></div>Food</li>
-            <li><div id="entertainment"></div>Entertainment</li>
-            <li><div id="education"></div>Education</li>
-            <li><div id="transportation"></div>Transportation</li>
-            <li><div id="unclassified"></div>Unclassified</li>
-          </ul>
-        </div>
+        <canvas id="myChart" width="100" height="60"></canvas>
       </div>
       <div id="goals">
         <h2>Goals near completion</h2>
@@ -43,8 +32,8 @@
             <p>10%</p>
           </div>
           <p id="goal_name">New boots</p>
-          <button id="see_more">See More</button>
         </div>
+       
       </div>
       <div id="recent_transactions">
         <h2>Recent Transactions</h2>
@@ -68,7 +57,9 @@
           </tr>
         </table>
       </div>
+        
     </div>
   </body>
+  <script src="charts.js"></script>
   <script src="home.js"></script>
 </html>
