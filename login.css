@@ -22,12 +22,12 @@ body {
 
 .userBox {
   margin: auto;
-  margin-bottom:20px;
+  margin-bottom: 1.3rem;
   width: 25rem;
   padding: .5rem;
   color: white;
   list-style-type:none;
-  background-color: rgba(46, 144, 255, 0.5);
+  background-color: rgba(46, 144, 255, 0.3);
 }
 
 .list {
@@ -38,8 +38,19 @@ body {
   margin-top: 1.5rem;
 }
 
-li {
+ul li {
   margin: .75rem 0;
+}
+
+ul li div {
+    display: inline;   
+}
+
+.textBox {
+  border: 0.067rem solid white;
+  float: right;
+  height: 1.2rem;
+  width: 16.6rem;
 }
 
 button {
@@ -65,5 +76,3 @@ a {
   position: relative;
   right: -300px;
 }
-
-
