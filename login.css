@@ -11,7 +11,7 @@ body {
 .userBox {
   margin: auto;
   margin-bottom:20px;
-  width: 50%;
+  width: 25rem;
   padding: .5rem;
   color: white;
   list-style-type:none;
@@ -31,21 +31,20 @@ li {
 }
 
 button {
-  size: 1rem;
   background-color: white;
   color: #0C2440;
 }
 
+button:hover {
+  text-decoration: underline;
+}
+
 #loginButton {
   position: relative;
-  right: -300px;
+  right: -350px;
 }
 
 #accountButton {
   position: relative;
-  right: -247px;
-}
-
-button:hover {
-  text-decoration: underline;
+  right: -300px;
 }
