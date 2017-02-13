@@ -10,8 +10,9 @@ body {
 
 .userBox {
   margin: auto;
+  margin-bottom:20px;
   width: 50%;
-  padding: .75rem;
+  padding: .5rem;
   color: white;
   list-style-type:none;
   background-color: rgba(46, 144, 255, 0.5);
@@ -21,3 +22,30 @@ body {
   list-style-type:none;
 }
 
+#textBoxes {
+  margin-top: 12rem;
+}
+
+li {
+  margin: .75rem 0;
+}
+
+button {
+  size: 1rem;
+  background-color: white;
+  color: #0C2440;
+}
+
+#loginButton {
+  position: relative;
+  right: -300px;
+}
+
+#accountButton {
+  position: relative;
+  right: -247px;
+}
+
+button:hover {
+  text-decoration: underline;
+}
