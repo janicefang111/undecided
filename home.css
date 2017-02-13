@@ -1,0 +1,183 @@
+:root {
+  font-size: 15px;
+}
+
+body {
+  font-family: helvetica;
+  background-image: url("https://dl.dropboxusercontent.com/s/do8bwpxzkqpbmvk/White%20Background%20with%20Angled%20Gray%20Bars.png?dl=0");
+  background-attachment:fixed;
+}
+
+#navigation {
+  height: 5.0rem;
+  background: #3673A3;
+}
+
+#logo {
+  float: left;
+  display: block;
+  background-position: center;
+}
+
+#logo img {
+  height: 5.0rem;
+}
+
+#nav_bar {
+  display: block;
+  margin-left: 30.0rem;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 1.2rem;
+  padding-top: 0.7rem;
+}
+
+nav ul li a {
+  float: left;
+  padding: 1.0rem 1.0rem;
+  text-align:center;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+#home{
+  font-weight: bold;
+  font-size: 21px;
+}
+
+#graph {
+  height: 22.0rem;
+  width: 35.0rem;
+  display: inline-block;
+  float: left;
+  margin-left: 3.0rem;
+}
+
+#graph img {
+  float: left;
+  height: 17.0rem;
+}
+
+#legend {
+  margin-top: 4.0rem;
+}
+
+#legend ul {
+  list-style: none;
+  float: left;
+}
+
+#legend ul li div {
+  height: 1.2rem;
+  width: 1.2rem;
+  display: inline-block;
+  margin-right: 0.3rem;
+  margin-top: 0.1rem;
+}
+
+#utilities {
+  background-color: brown;
+}
+#food {
+  background-color: green;
+}
+#entertainment {
+  background-color: #ff6600;
+}
+#education {
+  background-color: red;
+}
+#transportation {
+  background-color: purple;
+}
+#unclassified {
+  background-color: #3673A3;
+}
+
+#goals {
+  display: inline-block;
+  height: 22.0rem;
+  width: 27.0rem;
+  margin-right: 0rem;
+}
+
+#goals h2 {
+  text-align: right;
+  margin-right: 0.7rem;
+}
+
+#percent_bar {
+  display: inline-block;
+  width: 20.0rem;
+  height: 3.0rem;
+  border: 0.13rem solid black;
+  background: white;
+  padding-right: 0.4rem;
+}
+#percent_bar p {
+  float: right;
+  margin-top: 1.0rem;
+}
+#percent_filled {
+  display: inline-block;
+  width: 5.0rem;
+  height: 3.0rem;
+  background: green;
+}
+
+#goal_name {
+  display: inline;
+  float: left;
+  margin-top: 1.0rem;
+  padding: 0 0.5rem;
+}
+
+#goal1 {
+  height: 3.0rem;
+  margin-top: 2.0rem;
+}
+
+#see_more {
+  float: right;
+  margin-top: 3.0rem;
+  margin-right: 1.0rem;
+  padding: 1.0rem 2.0rem;
+  font-size: 1.0rem;
+  border: 0.1rem solid black;
+}
+#see_more:hover {
+  background: lightgrey;
+}
+
+#page_content {
+  width:65.0rem;
+  padding: 3.0rem 0;
+}
+
+#recent_transactions {
+  text-align: center;
+  display: block;
+}
+
+#recent_transactions table {
+  border: 0.15rem solid black;
+  font-size: 1.5rem;
+  width: 40.0rem;
+  horizontal-align: middle;
+  margin: auto;
+}
+
+th, td {
+  padding: 0.5rem 0.5rem;
+}
+
+/*
+#graph, #goals, #page_content {
+  border: 5px solid black;
+}*/
