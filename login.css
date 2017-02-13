@@ -8,6 +8,18 @@ body {
   background-repeat: no-repeat;
 }
 
+.introText {
+  margin: 0 auto;
+  margin-top: 12rem;
+  color: white;
+  width: 25rem;
+}
+
+
+#title {
+  font-size: 1.5rem;
+}
+
 .userBox {
   margin: auto;
   margin-bottom:20px;
@@ -23,7 +35,7 @@ body {
 }
 
 #textBoxes {
-  margin-top: 12rem;
+  margin-top: 1.5rem;
 }
 
 li {
