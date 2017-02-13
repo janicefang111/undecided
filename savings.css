@@ -101,7 +101,7 @@ nav ul li a:hover {
   margin-top: 2rem;
   margin-left: 0rem;
   height: 3rem;
-  background-color: #72b4e9;
+  background-color: #3ba7ff;
   color: white;
   font-weight: bold;
   font-size: 1.2rem;
@@ -136,7 +136,7 @@ nav ul li a:hover {
   padding: 16px;}
 
   .finish_button {
-    background-color: #7DC5FF;
+    background-color: #3ba7ff;
     color: white;
     padding: 0.5rem 0.1rem;
     margin: 8px 0;
@@ -269,4 +269,6 @@ form {
   color: #3673A3;
   font-weight: bold;
 }
-
+#row2, #row3{
+  display: none;
+}
