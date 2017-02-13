@@ -236,8 +236,8 @@ form {
   display: inline-block;
   width: 5.0rem;
   height: 3.0rem;
-  background: green;
-  float: right;
+  background: #3ba7ff;
+  float: left;
 }
 
 #goal_name {
