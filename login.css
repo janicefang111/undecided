@@ -39,7 +39,7 @@ body {
 }
 
 ul li {
-  margin: .75rem 0;
+  margin: .9rem 0;
 }
 
 ul li div {
@@ -51,6 +51,8 @@ ul li div {
   float: right;
   height: 1.2rem;
   width: 16.6rem;
+  background: transparent;
+  color:white;
 }
 
 button {
@@ -76,3 +78,5 @@ a {
   position: relative;
   right: -303px;
 }
+
+
