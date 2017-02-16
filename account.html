@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  
   <head>
   <link rel="stylesheet" type="text/css" href="account.css">
   </head>
@@ -27,15 +28,15 @@
   
 <table id = "table">
  <!-- <tr><td><button class = "button" id = "account_button"> My Accounts </button></td></tr> -->
-   <tr><td><button class = "button" id = "addacct_button">Add Account</button>
-     </td></tr>
+   <tr>
+     <td><button class = "button" id = "addacct_button">Add Account</button></td>
+  </tr>
             
   <!--Table headers-->
    <tr id = "headers">
     <th id = "cancel"></th>
     <th>Bank Name</th>
     <th>Account Number</th>
-  
     <th></th>
     <th id = "deposit"></th>
   </tr>
@@ -47,10 +48,8 @@
      <button id = "del_1" class = "cancel_button">Delete</button>
     </td>
     <td id= "name_1" class = "table_entry">US Bank Checking</td>
-    <td  class = "table_entry" id= "target_1">23293
-      </td>
-    
-    </tr>
+    <td  class = "table_entry" id= "target_1">23293</td>  
+  </tr>
   
   <tr id = "row2">
     <td>
@@ -58,23 +57,18 @@
      <button id = "del_2" class = "cancel_button">Delete</button>
     </td>
     <td id= "name_2" class = "table_entry">BofA Checking</td>
-    <td  class = "table_entry" id= "target_2">95832
-      </td>
-    
-    </tr>
+    <td  class = "table_entry" id= "target_2">95832</td>
+  </tr>
 
 
-<tr id = "row3">
+  <tr id = "row3">
     <td>
-   
-     <button id = "del_3" class = "cancel_button">Delete</button>
+      <button id = "del_3" class = "cancel_button">Delete</button>
     </td>
     <td id= "name_3" class = "table_entry">Citi Checking</td>
-    <td  class = "table_entry" id= "target_3">54323
-      </td>
-    
-    </tr>
-    </table>
+    <td  class = "table_entry" id= "target_3">54323</td>
+  </tr>
+</table>
   
 <!-- The Modal -->
 <div id="Add_more_modal" class="modal">
@@ -82,19 +76,18 @@
 <!-- Modal content -->
   <div class="modal-content">
     <span class="AM_close">&times;</span>
-  <div id = "AM_title"> Add a New Bank Account</div>
+    <div id = "AM_title"> Add a New Bank Account</div>
   
-    <div class="container">
+    <div class="container"></div>
     <div class =  "subtitle">Bank Name</div>
     <div id = "AM_goal_name" class = "input" contenteditable="true" ></div>
     <br><br>
-     <div class =  "subtitle">Account Number</div>
+    <div class =  "subtitle">Account Number</div>
     <div class ="input" id = "AM_target_amount" contenteditable="true" ></div>
     <br><br>
-    </div>
-  <button  id = "AM_save_goal" class = "finish_button">Save New Account</button>
- </div>   
-
-  <script type="text/javascript" src="account.js">          
-  </body>
+    <button  id = "AM_save_goal" class = "finish_button">Save New Account</button>
+  </div>
+</div>       
+</body>
+<script type="text/javascript" src="account.js">   
 </html>
