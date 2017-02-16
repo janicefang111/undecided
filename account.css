@@ -1,0 +1,165 @@
+:root {
+  font-size: 15px;
+}
+
+body {
+  font-family: helvetica;
+   background-image: url("https://dl.dropboxusercontent.com/s/do8bwpxzkqpbmvk/White%20Background%20with%20Angled%20Gray%20Bars.png?dl=0");
+  background-attachment:fixed;
+}
+
+
+#account{
+  font-weight: bold;
+  font-size: 21px;
+}
+#navigation {
+  height: 5.0rem;
+  background: #3673A3;
+}
+
+#logo {
+  float: left;
+  display: block;
+  background-position: center;
+}
+
+#logo img {
+  height: 5.0rem;
+}
+
+#nav_bar {
+  display: block;
+  margin-left: 30.0rem;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 1.2rem;
+  padding-top: 0.7rem;
+}
+
+nav ul li a {
+  float: left;
+  padding: 1.0rem 3.0rem;
+  text-align:center;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+/*****************Menu Bar ends here ********************************/
+
+/****** buttons and table   *********************/
+.button{
+  background-color: #3ba7ff;
+  color: white;
+  width: 10rem;
+  height: 3.2rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    text-align:center;
+    padding: 10px;
+}
+
+#table{
+  margin-left: 1.5rem;
+  margin-top: 2rem;
+}
+
+.table_header{
+  text-align: center;
+}
+
+.table_entry{
+  text-align: center;
+  border-style: solid;
+  width: 15.2rem;
+  height: 3rem;
+}
+
+/***** Delete Button ****************************/
+.cancel_button{
+  background:  none;
+  color: #3e627f;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  width: 6rem;
+  padding-left: 0.7rem;
+}
+.cancel_button:hover{
+  color: red;
+}
+.cancel_button:active{
+  border:none;
+  background: #eee;
+  color: red;
+}
+
+/**** The pop-up shit *********************/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+  font-family: Helvetica;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+.container {
+  padding: 16px;}
+.finish_button {
+    background-color: #72b4e9;
+    color: white;
+    padding: 0.5rem 0.1rem;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    float: right;
+}
+.input {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  text-align: left;
+}
+form {
+    border: 3px solid #f1f1f1;
+}
+
+/***Closing pop up shit ****/
+.AM_close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+  font-weight: bold;}
+
+.AM_close:hover, .AM_close:focus {
+    color: black;
+    text-decoration: none;
+  cursor: pointer;} 
+
+
+/***Updating the tables *****/
