@@ -52,7 +52,7 @@ nav ul li a:hover {
 }
 
 li a.active {
-  text-decoration: underline;
+  text-decoration: none;
 }
 /*****************Menu Bar ends here ********************************/
 
