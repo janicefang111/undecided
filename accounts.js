@@ -71,7 +71,7 @@ var Deleted_Row = 0;
 function EmptyCheck(){
   if (l1 === 0 && l2 === 0 && l3 === 0){
     table.style.display = "none";
-    no_goals.innerHTML = "You have no Goals yet!";
+    no_goals.innerHTML = "You have no linked accounts!";
     no_goals.style.display = "block";
   }
 }
