@@ -51,7 +51,7 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-nav ul li.selected a {
+a.account {
   text-decoration: underline;
   font-weight: normal;
 }
