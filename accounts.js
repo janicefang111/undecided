@@ -229,8 +229,9 @@ Add_account.onclick = function(){
   AM_modal.style.display = "none";
   }
   Added_Row = 0;
-  AM_target_amount.innerHTML = "0";
-  AM_goal_name.innerHTML = "New Goal";
+  AM_account_name.innerHTML = "New Account";
+  AM_account_nb.innerHTML = "";
+  AM_routing_nb.innerHTML = "";
   AM_bank_name.innerHTML = ""; 
 } 
 
