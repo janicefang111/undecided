@@ -10,7 +10,7 @@ body {
 
 
 #account{
-  font-weight: bold;
+  text-decoration: underline;
   font-size: 21px;
 }
 #navigation {
@@ -51,10 +51,6 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-a.account {
-  text-decoration: underline;
-  font-weight: normal;
-}
 
 
 /*****************Menu Bar ends here ********************************/
