@@ -225,7 +225,7 @@ Add_account.onclick = function(){
   name_3.innerHTML = AM_account_name.innerHTML;
   Bank_name_3.innerHTML = AM_bank_name.innerHTML; 
   Account_nb_3.innerHTML = "****" + AM_account_nb.innerHTML.substring(AM_account_nb.innerHTML.length-2,AM_account_nb.innerHTML.length);
-  Routing_nb_3.innerHTML = AM_routing_nb.innerHTML;
+  Routing_nb_3.innerHTML = "****" + AM_routing_nb.innerHTML.substring(AM_routing_nb.innerHTML.length-2,AM_routing_nb.innerHTML.length);
   AM_modal.style.display = "none";
   }
   Added_Row = 0;
