@@ -51,15 +51,11 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-nav ul li a:active {
+nav ul li.selected a {
   text-decoration: underline;
   font-weight: normal;
 }
 
-#account:active {
-  text-decoration: underline;
-  font-weight: normal;
-}
 
 /*****************Menu Bar ends here ********************************/
 
