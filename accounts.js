@@ -211,14 +211,14 @@ Add_account.onclick = function(){
   name_1.innerHTML = AM_account_name.innerHTML;
   Bank_name_1.innerHTML = AM_bank_name.innerHTML; 
   Account_nb_1.innerHTML = "****" + AM_account_nb.innerHTML.substring(AM_account_nb.innerHTML.length-2,AM_account_nb.innerHTML.length);
-  Routing_nb_1.innerHTML = AM_routing_nb.innerHTML;
+  Routing_nb_1.innerHTML = = "****" + AM_routing_nb.innerHTML.substring(AM_routing_nb.innerHTML.length-2,AM_routing_nb.innerHTML.length);
   AM_modal.style.display = "none";
 }
   else  if (Added_Row === 2){
    name_2.innerHTML = AM_account_name.innerHTML;
   Bank_name_2.innerHTML = AM_bank_name.innerHTML; 
   Account_nb_2.innerHTML = "****" + AM_account_nb.innerHTML.substring(AM_account_nb.innerHTML.length-2,AM_account_nb.innerHTML.length);
-  Routing_nb_2.innerHTML = AM_routing_nb.innerHTML;
+  Routing_nb_2.innerHTML = = "****" + AM_routing_nb.innerHTML.substring(AM_routing_nb.innerHTML.length-2,AM_routing_nb.innerHTML.length);
   AM_modal.style.display = "none";
 }
   else  if (Added_Row === 3){
