@@ -52,12 +52,12 @@ nav ul li a:hover {
 }
 
 nav ul li a:active {
-  text-decoration: none;
+  text-decoration: underline;
   font-weight: normal;
 }
 
 #account:active {
-  text-decoration: none;
+  text-decoration: underline;
   font-weight: normal;
 }
 
