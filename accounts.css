@@ -10,7 +10,7 @@ body {
 
 #navigation {
   height: 5.0rem;
-  background: #3673A3;
+  background: #097EBF;
 }
 
 #logo {
@@ -61,7 +61,7 @@ nav ul li a:hover {
 }
 .cancel_button{
   background:  none;
-  color: #3e627f;
+  color: #097EBF;
   font-size: 1.5rem;
   font-weight: bold;
   border: none;
@@ -82,7 +82,7 @@ nav ul li a:hover {
   margin-top: 2rem;
 }
 .deposit_button{
-  background-color: #3ba7ff;
+  background-color: #097EBF;
   color: white;
     width: 7rem;
   height: 3.2rem;
@@ -102,7 +102,7 @@ nav ul li a:hover {
   margin-top: 2rem;
   margin-left: 0rem;
   height: 3rem;
-  background-color: #3ba7ff;
+  background-color: #097EBF;
   color: white;
   font-weight: bold;
   font-size: 1.2rem;
@@ -137,7 +137,7 @@ nav ul li a:hover {
   padding: 16px;}
 
   .finish_button {
-    background-color: #3ba7ff;
+    background-color: #097EBF;
     color: white;
     padding: 0.5rem 0.1rem;
     margin-top: 1rem;
