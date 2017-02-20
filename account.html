@@ -1,15 +1,12 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
-  
   <head>
-  <link rel="stylesheet" type="text/css" href="account.css">
+   <link rel="stylesheet" type="text/css" href="savings.css">
   </head>
   <body>
     <div id="navigation">
       <div id="logo">
-      <a href="home.html">
-        <img src="https://dl.dropboxusercontent.com/s/jh5jvbzd1svj0g4/piggyBank.png?dl=0">
-      </a>
+      <img src="https://dl.dropboxusercontent.com/s/jh5jvbzd1svj0g4/piggyBank.png?dl=0">
       </div>
       <div id="nav_bar">
         <nav>
@@ -18,78 +15,97 @@
             <li id="savings"><a href="savings.html">Savings</a></li>
             <li id="budget"><a href="#">Budget</a></li>
             <li><a href="#">Transactions</a></li>
-            <li id="account"><a href="account.html">Account</a></li>
+            <li><a href="#">Accounts</a></li>
           </ul>
         </nav>
       </div>
     </div>
-   
-<!--End of Top Menu Bar -->
+   <br>
+    <div id = "current_goals"><h1 id = "page_title">My Accounts</h1><div>
 
-<div id = "current_goals"><h1 id = "page_title">My Account</h1></div>
+    <div id = "no_goals"> You have no Accounts yet!</div>
   
-<table id = "table">
- <!-- <tr><td><button class = "button" id = "account_button"> My Accounts </button></td></tr> -->
-   <tr>
-     <td><button class = "button" id = "addacct_button">Add Account</button></td>
-  </tr>
-            
-  <!--Table headers-->
-   <tr id = "headers">
+  <div id = "goal_limit">Account Limit Reached!</div>
+  <table id = "table">
+  <tr id = "headers">
     <th id = "cancel"></th>
+    <th>Name</th>
     <th>Bank Name</th>
     <th>Account Number</th>
+    <th>Routing Number</th>
     <th></th>
-    <th id = "deposit"></th>
   </tr>
-  
- <!--Info entry-->
   <tr id = "row1">
     <td>
-      <!--Delete button--> 
-     <button id = "del_1" class = "cancel_button">Delete</button>
+      <button id = "del_1" class = "cancel_button">Delete</button>
     </td>
     <td id= "name_1" class = "table_entry">US Bank Checking</td>
-    <td  class = "table_entry" id= "target_1">23293</td>  
+    <td  class = "table_entry" id= "Bank_name_1">US Bank</div>
+      </td>
+    <td id= "Account_nb_1"class = "table_entry">****212123</td>
+    <td id= "Routing_nb_1"class = "table_entry">1728374812737</td>
   </tr>
-  
-  <tr id = "row2">
+    <tr id = "row2">
     <td>
-      <!--Delete button--> 
-     <button id = "del_2" class = "cancel_button">Delete</button>
+      <button id = "del_2" class = "cancel_button">Delete</button>
     </td>
-    <td id= "name_2" class = "table_entry">BoA Checking</td>
-    <td  class = "table_entry" id= "target_2">95832</td>
+    <td id= "name_2" class = "table_entry"></td>
+    <td id= "Bank_name_2" class = "table_entry"></td>
+    <td id= "Account_nb_2"class = "table_entry"></td>
+    <td id= "Routing_nb_2"class = "table_entry"></td>
   </tr>
-
-
-  <tr id = "row3">
+    <tr id = "row3">
     <td>
       <button id = "del_3" class = "cancel_button">Delete</button>
     </td>
-    <td id= "name_3" class = "table_entry">Citi Checking</td>
-    <td  class = "table_entry" id= "target_3">54323</td>
+    <td id= "name_3" class = "table_entry"></td>
+    <td id= "Bank_name_3" class = "table_entry"></td>
+    <td id= "Account_nb_3"class = "table_entry"></td>
+    <td id= "Routing_nb_3"class = "table_entry"></td>
   </tr>
 </table>
-  
+      <!-- Trigger/Open The Modal -->
+<button id="Add_more_button">Add Account</button>
+
 <!-- The Modal -->
 <div id="Add_more_modal" class="modal">
-  
-<!-- Modal content -->
+
+  <!-- Modal content -->
   <div class="modal-content">
     <span class="AM_close">&times;</span>
-    <div id = "AM_title"> Add a New Bank Account</div>
-  
-    <div class="container"></div>
-    <div class =  "subtitle">Bank Name</div>
-    <div id = "AM_goal_name" class = "input" contenteditable="true" ></div>
+  <div class  = "title" id = "AM_title"> New Account</div>
+
+  <div class="container">
+    <div class =  "subtitle">Account Name (nickname)</div>
+    <div id = "AM_account_name" class = "input" contenteditable="true" >My account</div>
     <br><br>
-    <div class =  "subtitle">Account Number</div>
-    <div class ="input" id = "AM_target_amount" contenteditable="true" ></div>
+    <div class =  "subtitle">Bank</div>
+    <div class ="input" id ="AM_bank_name" contenteditable="true" >0</div>
+      <br><br>
+     <div class =  "subtitle">Account Number</div>
+    <div class ="input" id = "AM_account_nb" contenteditable="true" ></div>
     <br><br>
-    <button  id = "AM_save_goal" class = "finish_button">Save New Account</button>
+       <div class =  "subtitle">Routing Number</div>
+    <div class ="input" id ="AM_routing_nb" contenteditable="true" ></div>
+    <button  id = "Add_account" class = "finish_button">Add Account</button>
   </div>
-</div>       
-</body>
-  <script type="text/javascript" src="account.js"></script>
+</div>
+    </div>  
+       <div id="Del_modal" class="modal">
+
+  <!-- Modal content -->
+<div class="modal-content">
+    <span class="Del_close">&times;</span>
+  <div class = "title" id = "Del_title"> Delete</div>
+
+  <div class="container">
+    <div> Are you sure you want to delete this account?</div>
+    <button id = "Del_yes">Yes</button>
+    <button id = "Del_no">No</button>
+  </div>
+  </div>
+</div>
+  </div>
+<script src="savings.js"></script>
+  </body>
 </html>
