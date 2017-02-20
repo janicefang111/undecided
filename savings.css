@@ -70,6 +70,7 @@ nav ul li a:hover {
 }
 .cancel_button:hover{
   color: red;
+  text-decoration: underline;
 }
 .cancel_button:active{
   border:none;
@@ -142,8 +143,12 @@ nav ul li a:hover {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 10%;
+    width: 8rem;
     float: right;
+    font-size: 1rem;
+}
+.finish_button:hover{
+  text-decoration: underline;
 }
 .input {
     width: 90%;
@@ -173,9 +178,9 @@ form {
     color: black;
     text-decoration: underline;
   cursor: pointer;} 
+
 .no_thanks_button{
-   background-color: #3ba7ff;
-    color: white;
+   background-color: lightgrey;
     padding: 0.5rem 0.1rem;
     margin: 8px 0;
     border: none;
@@ -193,7 +198,7 @@ form {
     border: none;
     cursor: pointer;
     width: 10%;
-    margin-right: 35rem;
+    margin-left: -0.5rem;
 }
 
 .yes_button:hover{
@@ -235,7 +240,7 @@ form {
 
 #percent_bar {
   display: inline-block;
-  width: 20.0rem;
+  width: 18.5rem;
   height: 3.0rem;
   border: 0.13rem solid black;
   background: white;
@@ -248,7 +253,7 @@ form {
 }
 #percent_filled {
   display: inline-block;
-  width: 5.0rem;
+  width: 20%;
   height: 3.0rem;
   background: #3ba7ff;
   float: left;
@@ -285,4 +290,81 @@ form {
 }
 #row2, #row3{
   display: none;
+}
+.title{
+  font-family: "Arial", sans-serif;
+  font-size: 1.7rem;
+}
+.subtitle{
+  margin-left: 0.7rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0.3rem;
+}
+#Current_monthly_payment{
+    margin-top: -1.2rem;
+   margin-bottom: 3rem;
+  margin-left: 0.5rem;
+  text-align: left;
+  font-weight: bold;
+  
+}
+#D_rec_pay{
+font-weight: normal;
+  margin-left: 1rem;
+  display: inline;
+}
+#warning{
+  font-size: 0.65rem;
+  text-align: left;
+  margin-left: 1rem;
+  
+}
+#progress{
+  margin-left: 13rem;
+  position: absolute;
+}
+#yes_button_AM{
+  margin-left: -39rem;
+}
+/* The Delete Close Button */
+.Del_close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.Del_close:hover,
+.Del_close:focus {
+    color: black;
+    text-decoration: underline;
+  cursor: pointer;} 
+
+.title{
+  diplay: inline;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+#Del_yes, #Del_no{
+    padding: 0.5rem 0.1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    
+}
+#Del_yes{
+   border-style: solid;
+  border-color:#7DC5FF;
+}
+#Del_notice{
+  font-size: 0.7rem;
+}
+#Del_account_name{
+  display: inline;
+  font-size: 1rem;
+}
+#Del_name{
+  diplay: inline;
 }
