@@ -81,7 +81,7 @@ nav ul li a:hover {
   margin-top: 2rem;
 }
 .deposit_button{
-  background-color: #3ba7ff;
+  background-color: #097EBF;
   color: white;
     width: 7rem;
   height: 3.2rem;
@@ -101,7 +101,7 @@ nav ul li a:hover {
   margin-top: 2rem;
   margin-left: 0rem;
   height: 3rem;
-  background-color: #3ba7ff;
+  background-color: #097EBF;
   color: white;
   font-weight: bold;
   font-size: 1.2rem;
@@ -136,7 +136,7 @@ nav ul li a:hover {
   padding: 16px;}
 
   .finish_button {
-    background-color: #3ba7ff;
+    background-color: #097EBF;
     color: white;
     padding: 0.5rem 0.1rem;
     margin: 8px 0;
