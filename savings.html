@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
   <head>
    <link rel="stylesheet" type="text/css" href="savings.css">
@@ -15,7 +15,7 @@
             <li id="savings"><a href="savings.html">Savings</a></li>
             <li id="budget"><a href="#">Budget</a></li>
             <li><a href="#">Transactions</a></li>
-            <li><a href="account.html">Account</a></li>
+            <li><a href="#">Account</a></li>
           </ul>
         </nav>
       </div>
@@ -83,7 +83,7 @@
   <!-- Modal content -->
   <div class="modal-content">
     <span class="AM_close">&times;</span>
-  <div id = "AM_title"> New Goal</div>
+  <div class  = "title" id = "AM_title"> New Goal</div>
 
   <div class="container">
     <div class =  "subtitle">Goal Name</div>
@@ -99,7 +99,7 @@
     <br>
     <button id = "yes_button_AM" class = "yes_button">Yes</button>
     <button id = "no_button_AM" class  = "no_thanks_button">No Thanks</buttom>
-    <button  id = "AM_save_goal" class = "finish_button">Save Goal</button>
+    <button  id = "AM_save_goal" class = "finish_button">Add Goal</button>
   </div>
   </div>
 </div>
@@ -122,18 +122,38 @@
           <div id="collected">Collected: <div id = "D_amount"></div> </div>
         </div>
       </div></div>
-       <div>Deposit</div>
+    <div id="Current_monthly_payment">Current monthly payment: <div id = "D_rec_pay"></div> </div>
+       <div class = "subtitle">Deposit</div> 
     <div class ="input" id ="D_deposit_amount" contenteditable="true" >0</div><div id = "USD">$</div>
     <br<br>
     <div class = "subtitle">Make this a monthly deposit? </div>
+    <div id = "warning">(This will overide your current monthly deposit)<div>
     <br>
     <button id =  "yes_button_D" class = "yes_button">Yes</button>
     <button id = "no_button_D" class  = "no_thanks_button">No Thanks</buttom>
-    <button id = "D_save_goal" class = "finish_button">Save Goal</button>
+    <button id = "D_save_goal" class = "finish_button">Save Changes</button>
   </div>
   </div>
 </div>
+        </div></div>
+        
+       <div id="Del_modal" class="modal">
+
+  <!-- Modal content -->
+<div class="modal-content">
+    <span class="Del_close">&times;</span>
+  <div class = "title" id = "Del_title"> Delete</div>
+
+  <div class="container">
+    <div> Are you sure you want to delete this goal?</div>
+    <button id = "Del_yes">Yes</button>
+    <button id = "Del_no">No</button>
+    <div id = "Del_notice">The amount you have collected will be transfered to account number:
+    <div id= "Del_account_name">***231<div></div>
+  </div>
+  </div>
 </div>
+  </div>
 <script src="savings.js"></script>
   </body>
 </html>
