@@ -55,6 +55,12 @@ nav ul li a:active {
   text-decoration: none;
   font-weight: normal;
 }
+
+#account:active {
+  text-decoration: none;
+  font-weight: normal;
+}
+
 /*****************Menu Bar ends here ********************************/
 
 /****** buttons and table   *********************/
