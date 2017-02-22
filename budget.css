@@ -10,7 +10,7 @@ body {
 
 #navigation {
   height: 5.0rem;
-  background: #3673A3;
+  background: #097EBF;
 }
 
 #logo {
@@ -48,7 +48,6 @@ nav ul li a:hover {
 
 #budget{
   font-weight: bold;
-  font-size: 21px;
 }
 
 #unclassified {
