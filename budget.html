@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="budget.css">
+  </head>
+  <body>
+    <div id="navigation">
+      <div id="logo">
+      <img src="https://dl.dropboxusercontent.com/s/jh5jvbzd1svj0g4/piggyBank.png?dl=0">
+      </div>
+      <div id="nav_bar">
+        <nav>
+          <ul>
+            <li id="home"><a href="home.html">Home</a></li>
+            <li id="savings"><a href="savings.html">Savings</a></li>
+            <li id="budget"><a href="budget.html">Budget</a></li>
+            <li><a href="transactions.html">Transactions</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div id="page_content">
+      <h2>January Spendings & Budgets</h2>
+      <div id="whole_bar">
+        <div id="text">
+          <span>Groceries</span>
+          <input contenteditable="true" type="text" onchange="functionC(this)" id="budget1" value="400">
+          <div id="dollar">/$</div>
+          <div id="spent1">$200</div>
+        </div>
+        <div id="percent_filled1"></div>
+        <div id="bar"></div>
+      </div>
+      <div id="whole_bar">
+        <div id="text">
+          <span>Utilities</span>
+          <input contenteditable="true" type="text" onchange="functionC(this)" id="budget2" value="250">
+          <div id="dollar">/$</div>
+          <div id="spent2">$80</div>
+        </div>
+        <div id="percent_filled2"></div>
+        <div id="bar"></div>
+      </div>
+      <div id="whole_bar">
+        <div id="text">
+          <span>Entertainment</span>
+          <input contenteditable="true" type="text" onchange="functionC(this)" id="budget3" value="180">
+          <div id="dollar">/$</div>
+          <div id="spent3">$110</div>
+        </div>
+        <div id="percent_filled3"></div>
+        <div id="bar"></div>
+      </div>
+      <div id="whole_bar">
+        <div id="text">
+          <span>Education</span>
+          <input contenteditable="true" type="text" onchange="functionC(this)" id="budget4" value="22000">
+          <div id="dollar">/$</div>
+          <div id="spent4">$20000</div>
+        </div>
+        <div id="percent_filled4"></div>
+        <div id="bar"></div>
+      </div>
+      <div id="unclassified">
+        <p>Unclassified: &nbsp&nbsp$120</p>
+      </div>
+      <p>*To adjust your budgets, enter a new budget value in the box after the "$" sign and press enter.</p>
+    </div>
+  </body>
+  <script src="budget.js"></script>
+</html>
