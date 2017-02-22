@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <link rel="stylesheet" type="text/css" href="accounts.css">
+  </head>
+  <body>
+    <div id="navigation">
+      <div id="logo">
+      <a href="home.html">
+        <img src="https://dl.dropboxusercontent.com/s/jh5jvbzd1svj0g4/piggyBank.png?dl=0">
+      </a>
+      </div>
+      <div id="nav_bar">
+        <nav>
+          <ul>
+            <li id="home"><a href="home.html">Home</a></li>
+            <li id="savings"><a href="savings.html">Savings</a></li>
+            <li id="budget"><a href="budget.html">Budget</a></li>
+            <li id="transactions"><a href="transactions.html">Transactions</a></li>
+            <li id="accounts"><a href="accounts.html">Accounts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+   <br>
+
+<div id="Table">
+    <input type="button" id="addButton" value="Add Transaction" onclick="insRow()"/><br/><br/>
+    <table id="transactionTable">
+      <!- Header Row ->
+        <tr id="header">
+            <td></td>
+            <td>Name</td>
+            <td>Category</td>
+            <td>Date</td>
+            <td>Amount</td>
+      </tr>
+      <!- First Row ->
+        <tr>
+            <td><input type="button" value="Delete" onclick="deleteRow(this)" class="deleteButton"/></td>
+            <td><input value="Chipotle" size=25 type="text" contenteditable=true min="10" class="tableCell"/></td>
+            <td><input value="Food" size=25 type="text" contenteditable=true min="10"class="tableCell"/></td>
+            <td><input value="01/27/17" size=25 type="text" contenteditable=true class="tableCell"/></td>
+            <td><input value="$10" size=25 type="text" contenteditable=true class="tableCell"/></td>
+     
+        </tr>
+      <!- Second Row ->
+      <tr>
+            <td><input type="button" value="Delete" onclick="deleteRow(this)" class="deleteButton"/></td>
+            <td><input value="Movie Tickets" size=25 type="text" contenteditable=true min="10" class="tableCell"/></td>
+            <td><input value="Entertainment" size=25 type="text" contenteditable=true min="10"class="tableCell"/></td>
+            <td><input value="01/24/17" size=25 type="text" contenteditable=true class="tableCell"/></td>
+            <td><input value="$12" size=25 type="text" contenteditable=true class="tableCell"/></td>
+     
+        </tr>
+      <!- Third Row ->
+      <tr>
+            <td><input type="button" value="Delete" onclick="deleteRow(this)" class="deleteButton"/></td>
+            <td><input value="Internet Bill" size=25 type="text" contenteditable=true min="10" class="tableCell"/></td>
+            <td><input value="Utitlities" size=25 type="text" contenteditable=true min="10"class="tableCell"/></td>
+            <td><input value="01/17/17" size=25 type="text" contenteditable=true class="tableCell"/></td>
+            <td><input value="$36" size=25 type="text" contenteditable=true class="tableCell"/></td>
+     
+        </tr>
+      <!- Fourth Row ->
+      <tr>
+            <td><input type="button" value="Delete" onclick="deleteRow(this)" class="deleteButton"/></td>
+            <td><input value="Barnes and Noble" size=25 type="text" contenteditable=true min="10" class="tableCell"/></td>
+            <td><input value="Education" size=25 type="text" contenteditable=true min="10"class="tableCell"/></td>
+            <td><input value="01/15/17" size=25 type="text" contenteditable=true class="tableCell"/></td>
+            <td><input value="$30" size=25 type="text" contenteditable=true class="tableCell"/></td>
+     
+        </tr>
+      <!- Fifth Row ->
+      <tr>
+            <td><input type="button" value="Delete" onclick="deleteRow(this)" class="deleteButton"/></td>
+            <td><input value="Gas Bill" size=25 type="text" contenteditable=true min="10" class="tableCell"/></td>
+            <td><input value="Utilities" size=25 type="text" contenteditable=true min="10"class="tableCell"/></td>
+            <td><input value="01/14/17" size=25 type="text" contenteditable=true class="tableCell"/></td>
+            <td><input value="$24" size=25 type="text" contenteditable=true class="tableCell"/></td>
+     
+        </tr>
+    </table>
+</div>
+  </body>
+</html>
+
+
