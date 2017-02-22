@@ -1,0 +1,118 @@
+:root {
+  font-size: 15px;
+}
+
+body {
+  font-family: helvetica;
+  background-image: url("https://dl.dropboxusercontent.com/s/do8bwpxzkqpbmvk/White%20Background%20with%20Angled%20Gray%20Bars.png?dl=0");
+  background-attachment: fixed;
+}
+
+#navigation {
+  height: 5.0rem;
+  background: #3673A3;
+}
+
+#logo {
+  float: left;
+  display: block;
+  background-position: center;
+}
+
+#logo img {
+  height: 5.0rem;
+}
+
+#nav_bar {
+  display: block;
+  margin-left: 30.0rem;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 1.2rem;
+  padding-top: 0.7rem;
+}
+
+nav ul li a {
+  float: left;
+  padding: 1.0rem 1.0rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+#budget{
+  font-weight: bold;
+  font-size: 21px;
+}
+
+#unclassified {
+  font-size: 1.2rem;
+  margin-left: 4.1rem;
+}
+
+#text {
+  display: inline-block;
+  margin-right: 1.0rem;
+  width: 20%;
+  font-size: 1.2rem;
+}
+
+#text input {
+  width: 3.0rem;
+  border: 2px solid black;
+  display: inline;
+  padding: 0 0.5rem;
+  font-size: 1.0rem;
+  float: right;
+  text-align: center;
+}
+
+#dollar {
+  display: inline;
+  float: right;
+}
+
+#text span {
+  display: block;
+  text-align: right;
+}
+
+#spent1, #spent2, #spent3, #spent4 {
+  display: inline;
+  float: right;
+}
+
+#bar {
+  display: inline-block;
+  height: 2.5rem;
+  width: 59.5%;
+  border: 2px solid black;
+  position: absolute;
+}
+
+#percent_filled1, #percent_filled2, #percent_filled3, #percent_filled4 {
+  display: inline;
+  background: #3ba7ff;
+  height: 2.7rem;
+  position: absolute;
+}
+
+#diff, #rem_over {
+  display: inline;
+}
+
+#whole_bar {
+  width: 75%;
+  margin: 1.0rem 1.0rem;
+}
+
+#page_content {
+  width: 65.0rem;
+  padding: 3.0rem 2.0rem;
+}
