@@ -1,0 +1,103 @@
+:root {
+  font-size: 15px;
+}
+
+body {
+  font-family: helvetica;
+   background-image: url("https://dl.dropboxusercontent.com/s/do8bwpxzkqpbmvk/White%20Background%20with%20Angled%20Gray%20Bars.png?dl=0");
+  background-attachment:fixed;
+}
+
+#navigation {
+  height: 5.0rem;
+  background: #097EBF;
+}
+
+#logo {
+  float: left;
+  display: block;
+  background-position: center;
+}
+
+#logo img {
+  height: 5.0rem;
+}
+
+#nav_bar {
+  display: block;
+  margin-left: 30.0rem;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 1.2rem;
+  padding-top: 0.7rem;
+}
+
+nav ul li a {
+  float: left;
+  padding: 1.0rem 1.0rem;
+  text-align:center;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+#transactions {
+  font-weight: bold;
+}
+
+body {
+  font-family: helvetica;
+}
+
+.deleteButton{
+  background: none;
+  color: #3E627F;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  width: 6rem;
+  padding-left: 0.7rem;
+  height: 2rem;
+}
+
+#addButton {
+  background: none;
+  color: #3E627F;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  padding-left: 53rem;
+  height: 2rem;
+}
+
+.deleteButton:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+tr td {
+  text-align: center;
+}
+
+tr td input {
+  height: 1.5rem;
+  font-size: 1rem;
+}
+
+.tableCell {
+  border: solid;
+  width: 14rem;
+  height: 2rem;
+  text-align: center;
+}
+
+#header td {
+  font-weight:bold;
+  font-size:1rem;
+}
+
