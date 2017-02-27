@@ -3,7 +3,7 @@ for (var i=1; i<5; i++) {
   var spent = document.getElementById("spent" + i).innerHTML.replace("$","");
   var percent = parseFloat(spent)/parseFloat(budget);
   var percent_filled = document.getElementById("percent_filled" + i);
-  percent_filled.style.width = (percent*60).toFixed(2) + "%";
+  percent_filled.style.width = (percent*59.7).toFixed(2) + "%";
 };
 
 function functionC(val) {
@@ -16,12 +16,12 @@ function functionC(val) {
     percent_filled.style.background = "#3ba7ff";
   }
   if(parseFloat(spent)/parseFloat(budget) > 1) {
-    percent_filled.style.width = "60%";
+    percent_filled.style.width = "59.7%";
     percent_filled.style.background = "red";
   }
   else {
   var percent = parseFloat(spent)/parseFloat(budget);
-  percent_filled.style.width = (percent*60).toFixed(2) + "%";
+  percent_filled.style.width = (percent*59.7).toFixed(2) + "%";
   percent_filled.style.background = "#3ba7ff";
   }
 };
