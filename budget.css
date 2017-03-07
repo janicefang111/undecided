@@ -46,20 +46,23 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
+#page_content h2 {
+  margin-bottom: 2.5rem;
+}
+
 #budget{
   font-weight: bold;
 }
 
 #unclassified {
-  font-size: 1.2rem;
-  margin-left: 4.1rem;
+  font-size: 1.1rem;
 }
 
 #text {
   display: inline-block;
   margin-right: 1.0rem;
-  width: 20%;
-  font-size: 1.2rem;
+  width: 19%;
+  font-size: 1.1rem;
 }
 
 #text input {
@@ -80,6 +83,7 @@ nav ul li a:hover {
 #text span {
   display: block;
   text-align: right;
+  font-weight: bold;
 }
 
 #spent1, #spent2, #spent3, #spent4 {
@@ -102,16 +106,41 @@ nav ul li a:hover {
   position: absolute;
 }
 
-#diff, #rem_over {
+#diff1, #diff2, #diff3, #diff4 {
+  display: inline-block;
+  width: 13%;
+  font-size: 1.1rem;
+  text-align: left;
+  float: right;
+  position: relative;
+  padding: 0.7rem 0;
+  margin-right: 10.0rem;
+}
+
+#rest1, #rem_over1 {
+  display: inline;
+}
+
+#rest2, #rem_over2 {
+  display: inline;
+}
+
+#rest3, #rem_over3 {
+  display: inline;
+}
+
+#rest4, #rem_over4 {
   display: inline;
 }
 
 #whole_bar {
-  width: 75%;
-  margin: 1.0rem 1.0rem;
+  width: 100%;
+  margin: 1.0rem 0;
+  display: inline-block;
 }
 
 #page_content {
-  width: 65.0rem;
+  width: 80.0rem;
   padding: 3.0rem 2.0rem;
 }
+
