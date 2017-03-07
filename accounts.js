@@ -204,8 +204,8 @@ var Routing_nb_3 = document.getElementById("Routing_nb_3");
 
 
 Add_account.onclick = function(){
-
   Add_row();
+
   AM_modal.style.display = "none";
  if (Added_Row === 1){
   name_1.innerHTML = AM_account_name.innerHTML;
@@ -229,9 +229,8 @@ Add_account.onclick = function(){
   AM_modal.style.display = "none";
   }
   Added_Row = 0;
-  AM_account_name.innerHTML = "New Account";
+  AM_account_name.innerHTML = "";
   AM_account_nb.innerHTML = "";
   AM_routing_nb.innerHTML = "";
   AM_bank_name.innerHTML = ""; 
 } 
-
