@@ -83,12 +83,13 @@
     <div class = "subtitle">Bank</div>
     <div class ="input" id ="AM_bank_name" contenteditable="true" data-text="e.g. Chase"></div>
       <br>
-     <div class = "subtitle">Account Number</div>
-    <div class ="input" id = "AM_account_nb" contenteditable="true" data-text="Enter Account Number"></div>
+    <div class = "subtitle">Account Number</div>
+    <div class ="input" id = "AM_account_nb" contenteditable="true" data-text="Enter Account Number" onblur="checkContent1(this)"></div>
     <br>
        <div class = "subtitle">Routing Number</div>
-    <div class ="input" id ="AM_routing_nb" contenteditable="true" data-text="Enter Routing Number"></div>
+    <div class ="input" id ="AM_routing_nb" contenteditable="true" data-text="Enter Routing Number" onblur="checkContent2(this)"></div>
     <button  id = "Add_account" class = "finish_button">Add Account</button>
+    <div id="error">Account Number and Routing Number can only contain numbers.</div>
   </div>
 </div>
     </div>  
@@ -97,7 +98,7 @@
   <!-- Modal content -->
 <div class="modal-content">
     <span class="Del_close">&times;</span>
-  <div class = "title" id = "Del_title"> Delete</div>
+  <div class = "title" id = "Del_title">Delete</div>
   <div class="container">
     <div> Are you sure you want to delete this account?</div>
     <button id = "Del_yes">Yes</button>
