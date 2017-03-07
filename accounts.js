@@ -1,3 +1,4 @@
+
 //Exported variables
 /* l1,l2,l3
 name 1,2,3 */
@@ -200,12 +201,47 @@ var Bank_name_3 = document.getElementById("Bank_name_3");
 var Account_nb_3 = document.getElementById("Account_nb_3");
 var Routing_nb_3 = document.getElementById("Routing_nb_3");
 
+//Check account number and routing number
+
+var check1=true;
+var check2 =true;
+function checkContent1(content){
+  var val = content.innerHTML;
+   if (isNaN(val)){
+     check1=false;    
+     document.getElementById("error").style.visibility = "visible";
+   }
+  else {
+    check1 = true;
+    if (check1 && check2){
+        document.getElementById("error").style.visibility = "hidden";
+    }
+  }
+
+}
+function checkContent2(content){
+  var val = content.innerHTML;
+   if (isNaN(val)){
+        check2=false;
+        document.getElementById("error").style.visibility = "visible";
+   }
+  else {
+    check2 = true;
+    if (check1 && check2 ){
+      document.getElementById("error").style.visibility = "hidden";
+    }
+  }
+}
+
+
 //Saving a new goal
 
 
 Add_account.onclick = function(){
+   if (!check1 || !check2){
+    error();
+  }
   Add_row();
-
   AM_modal.style.display = "none";
  if (Added_Row === 1){
   name_1.innerHTML = AM_account_name.innerHTML;
