@@ -2,6 +2,11 @@
   font-size: 15px;
 }
 
+[contentEditable=true]:empty:not(:focus):before{
+    content:attr(data-text);
+    color: gray;
+}
+
 body {
   font-family: helvetica;
    background-image: url("https://dl.dropboxusercontent.com/s/do8bwpxzkqpbmvk/White%20Background%20with%20Angled%20Gray%20Bars.png?dl=0");
@@ -129,8 +134,7 @@ nav ul li a:hover {
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    border: 1px solid #888; /* Could be more or less, depending on screen size */
 }
 .container {
   padding: 16px;}
@@ -181,10 +185,10 @@ form {
 .no_thanks_button{
    background-color: lightgrey;
     padding: 0.5rem 0.1rem;
-    margin: 8px 0;
+    margin: 0px 0;
     border: none;
     cursor: pointer;
-    width: 10%;
+    width: 12%;
 }
 .no_thanks_button:hover {
   text-decoration: underline;
@@ -196,8 +200,7 @@ form {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 10%;
-    margin-left: -0.5rem;
+    width: 12%;
 }
 
 .yes_button:hover{
@@ -205,9 +208,12 @@ form {
 }
 #USD{
   margin-right: -2rem;
-  margin-left: 2rem;
+  margin-left: 1rem;
   float:left;
   margin-top: 1.3rem;
+}
+#AM_content{
+  width: 73%;
 }
 #AM_goal_name{
   margin-left:2rem;
@@ -216,6 +222,9 @@ form {
   text-align: center;
   font-weight: bold;
   font-size: 1.3rem;
+}
+#D_content{
+  width: 63%;
 }
 .D_close {
     color: #aaa;
@@ -238,12 +247,14 @@ form {
 }
 
 #percent_bar {
-  display: inline-block;
-  width: 18.5rem;
+  float:right;
+  width: 20rem;
   height: 3.0rem;
   border: 0.13rem solid black;
   background: white;
-  float: right;
+  margin-top: 0rem;
+  margin-left: -0.7rem;
+  margin-right: 0rem;
 }
 #percent_bar p {
   float: right;
@@ -257,7 +268,25 @@ form {
   background: #3ba7ff;
   float: left;
 }
-
+#cancel_rec_pay{
+   background-color: white;
+  font-weight: bold;
+  color: #3e627f;
+  padding: 0.5rem 0.1rem;
+  margin-top: -1.7rem;
+  margin-bottom: 0rem;
+  margin-left: 15rem;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  width: 5rem;
+  float:left;
+  text-decoration: underline;
+}
+#cancel_rec_pay:hover{
+  text-decoration:underline;
+  color: red;
+}
 #goal_name {
  margin-left: 2rem;
 }
@@ -265,11 +294,6 @@ form {
 #D_goal {
   height: 3.0rem;
   margin-top: 2.0rem}
-#collected{
-  margin-top: 0.75rem;
-  margin-left: 0.5rem;
-  float: left;
-}
 #D_amount{
   font-weight: normal;
   margin-left: 1rem;
@@ -299,12 +323,28 @@ form {
   margin-top: 0.6rem;
   margin-bottom: 0.3rem;
 }
-#Current_monthly_payment{
-    margin-top: -1.2rem;
-   margin-bottom: 3rem;
-  margin-left: 0.5rem;
+#collected{
+  margin-left: 0rem;
+  margin-top: 0rem;
   text-align: left;
+  margin-bottom: 20rem;
+}
+#Current_monthly_payment{
+ margin-top: -0.5rem;
+ margin-bottom: 0rem;
+ margin-left: 0rem;
+ font-weight: bold;
+ text-align: left;
+  
+}
+#D_Deposit{
   font-weight: bold;
+}
+#question{
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+D_modal{
   
 }
 #D_rec_pay{
@@ -319,11 +359,11 @@ font-weight: normal;
   
 }
 #progress{
-  margin-left: 13rem;
+  margin-left: 15rem;
   position: absolute;
 }
 #yes_button_AM{
-  margin-left: -39rem;
+  margin-left: -33rem;
 }
 /* The Delete Close Button */
 .Del_close {
@@ -342,7 +382,21 @@ font-weight: normal;
   diplay: inline;
   text-align: center;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+}
+#D_title{
+  margin-top: 1rem;
+}
+
+#Del_title{
+  text-align:center;
+  margin-bottom:0.75rem;
+}
+#del-content{
+  width: 60%;
+}
+#Are_you_sure{
+  text-align: center;
 }
 #Del_yes, #Del_no{
     padding: 0.5rem 0.1rem;
@@ -350,14 +404,18 @@ font-weight: normal;
     margin-bottom: 0.5rem;
     border: none;
     cursor: pointer;
-    width: 10%;
+    width: 7rem;;
     
+}
+#Del_yes:hover, #Del_no:hover{
+  text-decoration: underline;
 }
 #Del_yes{
    border-style: solid;
-  border-color:#7DC5FF;
+  border-color:#ef4940;
 }
 #Del_notice{
+  text-align:center;
   font-size: 0.7rem;
 }
 #Del_account_name{
