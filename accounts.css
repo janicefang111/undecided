@@ -2,6 +2,12 @@
   font-size: 15px;
 }
 
+[contentEditable=true]:empty:not(:focus):before{
+    content:attr(data-text);
+    color: gray;
+}
+
+
 body {
   font-family: helvetica;
    background-image: url("https://dl.dropboxusercontent.com/s/do8bwpxzkqpbmvk/White%20Background%20with%20Angled%20Gray%20Bars.png?dl=0");
@@ -152,7 +158,7 @@ nav ul li a:hover {
     width: 90%;
     padding: 12px 20px;
     margin: 8px 10px;
-    display: inline-block;
+    display: block;
     border: 1px solid #ccc;
     box-sizing: border-box;
   text-align: left;
@@ -338,7 +344,7 @@ font-weight: normal;
   cursor: pointer;} 
 
 .title{
-  diplay: inline;
+  display: inline;
   text-align: center;
   font-weight: bold;
   font-size: 1.3rem;
@@ -364,5 +370,5 @@ font-weight: normal;
   font-size: 1rem;
 }
 #Del_name{
-  diplay: inline;
+  display: inline;
 }
