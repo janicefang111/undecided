@@ -2,12 +2,6 @@
   font-size: 15px;
 }
 
-[contentEditable=true]:empty:not(:focus):before{
-    content:attr(data-text);
-    color: gray;
-}
-
-
 body {
   font-family: helvetica;
    background-image: url("https://dl.dropboxusercontent.com/s/do8bwpxzkqpbmvk/White%20Background%20with%20Angled%20Gray%20Bars.png?dl=0");
@@ -86,6 +80,7 @@ nav ul li a:hover {
   margin-left: 1.5rem;
   margin-top: 2rem;
 }
+
 .deposit_button{
   background-color: #097EBF;
   color: white;
@@ -114,6 +109,11 @@ nav ul li a:hover {
 }
 #Add_more_button:hover{
   text-decoration: underline;
+}
+
+[contentEditable=true]:empty:not(:focus):before{
+    content:attr(data-text);
+    color: gray;
 }
 /* The Modal (background) */
 .modal {
@@ -165,6 +165,12 @@ nav ul li a:hover {
 }
 form {
     border: 3px solid #f1f1f1;
+}
+
+#error {
+  color:red;
+  font-size:1rem;
+  visibility: hidden;
 }
 /* The Close Button */
 .AM_close {
@@ -360,7 +366,7 @@ font-weight: normal;
 }
 #Del_yes{
    border-style: solid;
-  border-color:#7DC5FF;
+  border-color:#ef4940;
 }
 #Del_notice{
   font-size: 0.7rem;
