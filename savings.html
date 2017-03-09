@@ -23,7 +23,7 @@
       </div>
     </div>
    <br>
-    <div id = "current_goals"><h1 id = "page_title">Current Goals</h1><div>
+    <div id = "current_goals"><h1 id = "page_title">Current Savings Goals</h1><div>
 
     <div id = "no_goals"> You have no Goals yet!</div>
   
@@ -83,19 +83,19 @@
 <div id="Add_more_modal" class="modal">
 
   <!-- Modal content -->
-  <div class="modal-content">
+  <div id = "AM_content" class="modal-content">
     <span class="AM_close">&times;</span>
   <div class  = "title" id = "AM_title"> New Goal</div>
 
-  <div class="container">
+  <div  class="container">
     <div class =  "subtitle">Goal Name</div>
-    <div id = "AM_goal_name" class = "input" contenteditable="true" >New Goal</div>
-    <br><br>
+    <div id = "AM_goal_name" class = "input" contenteditable="true" data-text = "New Goal"></div>
+    <br>
      <div class =  "subtitle">Target Amount</div>
-    <div class ="input" id = "AM_target_amount" contenteditable="true" >0</div><div id = "USD">$</div>
-    <br><br>
+    <div class ="input" id = "AM_target_amount" contenteditable="true" data-text = "Enter Amount"></div><div id = "USD">$</div>
+    <br>
        <div class =  "subtitle">Deposit</div>
-    <div class ="input" id ="AM_deposit_amount" contenteditable="true" >0</div><div id = "USD">$</div>
+    <div class ="input" id ="AM_deposit_amount" contenteditable="true" data-text = "Enter Amount" ></div><div id = "USD">$</div>
     <br<br>
     <div class =  "subtitle">Make this a monthly deposit?</div>
     <br>
@@ -110,7 +110,7 @@
       <div id="D_modal" class="modal">
 
   <!-- Modal content -->
-  <div class="modal-content">
+  <div id ="D_content" class="modal-content">
     <span class="D_close">&times;</span>
   <div id = "D_title" class = "title"> New Goal</div>
 
@@ -121,15 +121,16 @@
             <div id="percent_filled"></div>
             <p id = "progress">10%</p>
           </div>
-          <div id="collected">Collected: <div id = "D_amount"></div> </div>
+          <div id="collected">Collected: <div id = "D_amount"></div> </div></div>
+   
+          <div style= "display:inline"><div id="Current_monthly_payment">Monthly Deposit: <div id = "D_rec_pay"></div> </div><button id = "cancel_rec_pay" >Cancel </button></div>
         </div>
-      </div></div>
-    <div id="Current_monthly_payment">Current monthly payment: <div id = "D_rec_pay"></div> </div>
-       <div class = "subtitle">Deposit</div> 
-    <div class ="input" id ="D_deposit_amount" contenteditable="true" >0</div><div id = "USD">$</div>
+      </div>
+       <div id = "D_Deposit" class = "subtitle">Deposit</div> 
+    <div class ="input" id ="D_deposit_amount" contenteditable="true" data-text = "Enter Amount"></div><div id = "USD">$</div>
     <br<br>
-    <div class = "subtitle">Make this a monthly deposit? </div>
-    <div id = "warning">(This will overide your current monthly deposit)<div>
+    <div id = "question"class = "subtitle">Make this a monthly deposit? </div>
+    <div id = "warning"><div>
     <br>
     <button id =  "yes_button_D" class = "yes_button">Yes</button>
     <button id = "no_button_D" class  = "no_thanks_button">No Thanks</buttom>
@@ -142,12 +143,12 @@
        <div id="Del_modal" class="modal">
 
   <!-- Modal content -->
-<div class="modal-content">
+<div id = "del-content" class="modal-content">
     <span class="Del_close">&times;</span>
   <div class = "title" id = "Del_title"> Delete</div>
 
   <div class="container">
-    <div> Are you sure you want to delete this goal?</div>
+    <div id = "Are_you_sure"> Are you sure you want to delete this goal?</div>
     <button id = "Del_yes">Yes</button>
     <button id = "Del_no">No</button>
     <div id = "Del_notice">The amount you have collected will be transfered to account number:
